@@ -9,11 +9,11 @@
         <h2>{{listing.name}}</h2>
         <p>Building Code: {{listing.code}}</p>
         <p>Address: {{listing.address}}</p>
-        <a class="btn btn-primary" ui-sref="listings.edit({ listingId: listing._id })">
+        <a class="btn btn-primary" ui-sref="listings.edit({listingId: listing._id})">
           <i class="glyphicon glyphicon-edit"></i>
           Edit
         </a>
-        <a class="btn btn-danger" ng-click="remove();">
+        <a class="btn btn-danger" ng-click="remove(listing);">
           <i class="glyphicon glyphicon-trash"></i>
           Remove
         </a>
